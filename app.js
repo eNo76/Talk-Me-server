@@ -25,7 +25,7 @@ const sessionOptions = {
 // production 환경일 경우
 if (app.get('env') === 'production') {
   app.set('trust proxy', 1);
-  sessionOptions.cookie.secure = true; // ssl 적용
+  sessionOptions.cookie.secure = true; // ssl적용
 }
 
 app.use(session(sessionOptions));
